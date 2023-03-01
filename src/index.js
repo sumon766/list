@@ -30,12 +30,12 @@ contentDiv.appendChild(listsDiv);
 
 const tasks = [
   {
-    index: 0,
+    index: 1,
     details: 'Test Item 0',
     completed: false,
   },
   {
-    index: 1,
+    index: 0,
     details: 'Test Item 1',
     completed: false,
   },
@@ -51,8 +51,11 @@ const tasks = [
   },
 ];
 
+const taskSort = tasks.sort((a,b) => a.index - b.index);
 function listTheTasks(tasks) {
   tasks.forEach((task) => {
+    //task.index.sort();
+
     const listDiv = document.createElement('div');
     listDiv.className = 'list';
     listsDiv.appendChild(listDiv);
@@ -72,7 +75,7 @@ function listTheTasks(tasks) {
     listDiv.appendChild(dragIcon);
   });
 }
-listTheTasks(tasks);
+listTheTasks(taskSort);
 
 const allCompleted = document.createElement('button');
 allCompleted.className = 'all-completed';
