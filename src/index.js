@@ -51,11 +51,10 @@ const tasks = [
   },
 ];
 
-const taskSort = tasks.sort((a,b) => a.index - b.index);
+const taskSort = tasks.sort((a, b) => a.index - b.index);
+
 function listTheTasks(tasks) {
   tasks.forEach((task) => {
-    //task.index.sort();
-
     const listDiv = document.createElement('div');
     listDiv.className = 'list';
     listsDiv.appendChild(listDiv);
