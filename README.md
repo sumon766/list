@@ -1,5 +1,12 @@
-"# list" 
+# To Do List
+
 <a name="readme-top"></a>
+
+<div align="center">
+ <h3><b>To Do List is my demo project for learning ES6 modules and webpack
+ and it is a simple website that displays a list of To do tasks and allows you to add and remove tasks from that list.</b></h3>
+
+</div>
 
 <div align="center">
 
@@ -26,30 +33,27 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 To Do List <a name="about-project"></a>
+# 📖 [To-Do-List] <a name="about-project"></a>
 
-**To Do List** is a webpage for creating daily tasks list. One can easily add their regular tasks here as a list and mark a task as complete or remove it when done. This simple To Do List can be very useful to people.
+**[To Do List]** is my demo project for learning ES6 modules and webpack
+and it is a simple website that displays a list of To do tasks and allows you to add and remove tasks from that list.
 
 ## 🛠 Built With <a name="built-with"></a>
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="#">HTML</a></li>
-    <li><a href="#">CSS</a></li>
-    <li><a href="#">JavaScript</a></li>
-  </ul>
-</details>
+### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>Bundler</summary>
+  <summary>Client</summary>
+  <b>This project only works client side right now.</b>
   <ul>
-    <li><a href="#">Webpack</a></li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+    <li>Webpack</li>
   </ul>
 </details>
 
@@ -57,18 +61,18 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Add a To Do task**
-- **Check the To Do's anytime from anywhere**
-- **Mark a task as complete**
-- **Remove a task when done**
+- **[html]**
+- **[css]**
+- **[Javascript]**
+- **[Webpack]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo<a name="live-demo"></a>
 
-- [Live Demo Link](https://sumon766.github.io/list/)
+- [Live Demo Link](https://abdussattar-70.github.io/To-Do-List/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -81,20 +85,44 @@ To get a local copy up and running, follow these steps.
 ### Prerequisites
 
 In order to run this project you need:
+To know simple html, css, npm, and linter.
 
-A browser installed on your device.
-Download and install node js and npm.
-Setup webpack.
+- A Computer (MAC or PC)
+- code editor (VSCode,Atom etc...)
+- A browser (Chrome,Mozilla,Safari etc...)
+- Version Control System (Git and Github)
 
 ### Setup
 
 Clone this repository to your desired folder:
+cd my-folder
+git clone https://github.com/AbdusSattar-70/To-Do-List.git
 
-Open terminal from the root directory of project. Run the following commands respectively
+### Install
 
-npm run build
+Install this project with:
 
-npm start
+- npm install
+- npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+- npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+
+### Run tests
+
+To run tests, run the following command:
+
+- npm audit
+- npm start
+  To check Styelint error:-
+
+- npx stylelint "\*_/_.{css,scss}"
+- bin/react test test/models/article_test.rb
+
+### Deployment
+
+You can deploy this project using:
+
+- gitHub pages/
+- npm run build
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,12 +130,11 @@ npm start
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **MD Mursedul Islam Sumon**
+## 👤 Abdus Sattar
 
-- GitHub: [@githubhandle](https://github.com/sumon766)
-- Twitter: [@twitterhandle](https://twitter.com/sumon766)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/sumon766)
-
+- GitHub: [@githubhandle](https://github.com/AbdusSattar-70)
+- Twitter: [@twitterhandle](twitter.com/Abdus_Sattar70)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdus-sattar-a41a26215/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,9 +142,9 @@ npm start
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add tasks**
-- [ ] **Mark tasks as complete**
-- [ ] **Remove a task**
+- [ ] **[Preserve data in the browser ]**
+- [ ] **[Validate contact form ]**
+- [ ] **[ Preserve data in the browser]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,7 +152,9 @@ npm start
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
+Everybody is welcome to suggest, changes,Contributions, issues, and feature request in portfolio html css file.
+
+In order to do it, fork this repository, create a new branch and open a Pull Request from your branch.
 
 Feel free to check the [issues page](../../issues/).
 
@@ -135,7 +164,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project feel free to follow me on github.
+If you like this project, Please give me ⭐️ and you can use it following [MIT](./LICENSE) license.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -143,7 +172,7 @@ If you like this project feel free to follow me on github.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-This project could remain incomplete without support from my family. Thanks to all my family members.
+I would like to thank and appreciate who contributes this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -151,6 +180,6 @@ This project could remain incomplete without support from my family. Thanks to a
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT]() licensed.
+This project is under [MIT](./LICENSE) license.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
