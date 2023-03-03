@@ -26,7 +26,7 @@ clearBtn.addEventListener('click', () => {
   const updateItem = [];
   checks.forEach((checkbox, i) => {
     if (checkbox.checked) {
-        listCollection.data.forEach((item, index) => {
+      listCollection.data.forEach((item, index) => {
         item.index = index;
       });
       updateItem.push(i);
