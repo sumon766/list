@@ -72,7 +72,7 @@ and it is a simple website that displays a list of To do tasks and allows you to
 
 ## 🚀 Live Demo<a name="live-demo"></a>
 
-- [Live Demo Link](https://abdussattar-70.github.io/To-Do-List/dist/)
+- [Live Demo Link](https://sumon766.github.io/list/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,7 +96,7 @@ To know simple html, css, npm, and linter.
 
 Clone this repository to your desired folder:
 cd my-folder
-git clone https://github.com/AbdusSattar-70/To-Do-List.git
+git clone https://github.com/sumon766/list.git
 
 ### Install
 
@@ -130,11 +130,11 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-## 👤 Abdus Sattar
+## 👤 MD Mursedul Islam
 
-- GitHub: [@githubhandle](https://github.com/AbdusSattar-70)
-- Twitter: [@twitterhandle](twitter.com/Abdus_Sattar70)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdus-sattar-a41a26215/)
+- GitHub: [@githubhandle](https://github.com/sumon766)
+- Twitter: [@twitterhandle](twitter.com/sumon766)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/sumon766/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
