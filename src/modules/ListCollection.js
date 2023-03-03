@@ -44,7 +44,34 @@ export default class ListCollection {
          this.DeleteListeners();
          this.Edit();
          this.SaveListeners();
+         this.checkBox();
        };
+
+ updateCompleted = (index, completed) => {
+   this.data[index].completed = completed;
+   this.save();
+ }
+
+checkBox = () => {
+  const checks = document.querySelectorAll('input[type=checkbox]');
+  const inputs = document.querySelectorAll('.textarea-container textarea');
+  checks.forEach((ck, i) => {
+    const isCompleted = this.data[i].completed;
+    if (isCompleted) {
+      inputs[i].classList.add('completed');
+      checks[i].setAttribute('checked', 'checked');
+    }
+    ck.addEventListener('change', () => {
+      if (checks[i].checked) {
+        inputs[i].classList.add('completed');
+        this.updateCompleted(i, true);
+      } else {
+        inputs[i].classList.remove('completed');
+        this.updateCompleted(i, false);
+      }
+    });
+  });
+}
 
  Edit = () => {
    const editBtn = document.querySelectorAll('.editBtn');
@@ -59,6 +86,7 @@ export default class ListCollection {
    });
  }
 
+ /* update item when edit */
   updateItem = (task, i) => {
     this.data[i].task = task;
     this.save();
