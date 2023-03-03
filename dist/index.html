@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script defer src="main.bundle.js"></script></head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>To Do List</title>
+<script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
+
 <body>
-    <div id="container">
-    <div class="content">
-            <div class="todo">
-                <h1>Today's To Do</h1>
-                <button type="button"><i class="fa fa-refresh" aria-hidden="true"></i></button>
-            </div>
+  <main>
+    <section class="main">
+      <div class="padding">
+        <div class="inputContainer">
+          <div class="title-container">
+            <h1>Today's To Do</h1>
+            <i class="fa fa-refresh"></i>
+          </div>
+          <hr>
+          <div class="inputDiv">
+            <input type="text" id="inputField" placeholder="Add To Your List..">
+            <i class="fa fa-level-down enter-btn"></i>
+          </div>
+          <hr>
         </div>
-    </div>
+        <div class="items">
+          <div class="list-items">
+
+          </div>
+          <button class="clear-completed">Clear All Complete</button>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
