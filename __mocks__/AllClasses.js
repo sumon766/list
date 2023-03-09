@@ -1,6 +1,13 @@
-import Main from './mainClass.js';
+/* eslint max-classes-per-file: ["error", 2] */
+class Main {
+  constructor(task, index, completed) {
+    this.task = task;
+    this.index = index;
+    this.completed = completed;
+  }
+}
 
-export default class ListCollection {
+class ListCollection {
   constructor() {
     this.data = [];
   }
@@ -109,7 +116,6 @@ export default class ListCollection {
         item.index = index + 1;
       });
       this.save();
-      this.read();
     }
 
     DeleteListeners = () => {
@@ -130,3 +136,5 @@ export default class ListCollection {
       });
     }
 }
+
+module.exports = ListCollection;
