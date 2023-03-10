@@ -1,6 +1,6 @@
 import Main from './mainClass.js';
 
-export default class ListCollection {
+class ListCollection {
   constructor() {
     this.data = [];
   }
@@ -130,3 +130,4 @@ export default class ListCollection {
       });
     }
 }
+module.exports = ListCollection;

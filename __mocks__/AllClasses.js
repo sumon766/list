@@ -135,6 +135,30 @@ class ListCollection {
         this.data.push(new Main(toDoList.task, toDoList.index, toDoList.completed));
       });
     }
+
+    clearCompleted = () => {
+      const clearBtn = document.querySelector('.clear-completed');
+      if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+          const checks = document.querySelectorAll('input[type=checkbox]');
+          const updateItem = [];
+          checks.forEach((checkbox, i) => {
+            if (checkbox.checked) {
+              this.data.forEach((item, index) => {
+                item.index = index;
+              });
+              updateItem.push(i);
+            }
+          });
+          const updateList = this.data.filter((item, i) => !updateItem.includes(i));
+          updateList.forEach((item, index) => {
+            item.index = index;
+          });
+          this.data = updateList;
+          localStorage.setItem('toDoList', JSON.stringify(updateList));
+        });
+      }
+    }
 }
 
 module.exports = ListCollection;
