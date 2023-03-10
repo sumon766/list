@@ -56,4 +56,29 @@ describe('Test of add and remove functions from To-Do List', () => {
       });
     });
   });
+
+  test('ClearCompleted Button Test', () => {
+    const clearBtn = document.querySelector('.clear-completed');
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        const checks = document.querySelectorAll('input[type=checkbox]');
+        const updateItem = [];
+        checks.forEach((checkbox, i) => {
+          if (checkbox.checked) {
+            this.data.forEach((item, index) => {
+              item.index = index;
+            });
+            updateItem.push(i);
+          }
+        });
+        const updateList = this.data.filter((item, i) => !updateItem.includes(i));
+        updateList.forEach((item, index) => {
+          item.index = index;
+        });
+        this.data = updateList;
+        localStorage.setItem('toDoList', JSON.stringify(updateList));
+        expect(data.clearCompleted()).toHaveBeenCalled(localStorage.setItem('toDoList', JSON.stringify(updateList)));
+      });
+    }
+  });
 });
